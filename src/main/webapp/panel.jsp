@@ -17,17 +17,22 @@
             > 
     </head>
     <body>
-      
+        <%
+            if(session.getAttribute("usuario")== null){
+                response.sendRedirect("index.html");
+                return; 
+            }
+        %>
         <header class="page-header">
             <div class="content">
-              <H1>FARMACIA VIDA PLENA</H1>
-              <img src="assent/Designer.png" alt="logo de la empresa" class="logo">
+                <H1>FARMACIA VIDA PLENA</H1>
+                <img src="assent/Designer.png" alt="logo de la empresa" class="logo">
             </div>
-          
-        
+
+
             <!-- Botón para abrir el menú -->
             <button id="openMenuBtn" class="menu-btn">☰</button>
-        
+
             <!-- Menú lateral -->
             <div id="sideMenu" class="side-menu">
                 <button id="closeMenuBtn" class="close-btn">&times;</button>
@@ -38,66 +43,66 @@
                 <a href="clientes.html">Clientes</a>
                 <a href="facturacion.html">Facturación</a>
             </div>
-          </header>
-          <nav class="menu">
-           <div>
-            <a href="ventas.html" class="venta menu-item">
-              <i class="fa-solid fa-cart-shopping" style="color: #0f1514;"></i>
-              <img src="assent/ventas.png" alt="">
-              <h4>Ventas</h4>
-            </a>
+        </header>
+        <nav class="menu">
+            <div>
+                <a href="ventas.html" class="venta menu-item">
+                    <i class="fa-solid fa-cart-shopping" style="color: #0f1514;"></i>
+                    <img src="assent/ventas.png" alt="">
+                    <h4>Ventas</h4>
+                </a>
             </div>
             <div>
-              <a href="inventario.html" class="venta menu-item">
-                <i class="fa-solid fa-cart-shopping" style="color: #0f1514;"></i>
-                 <img src="assent/inventario.png" alt="">
-                 <H4>Inventario</H4>
-              </a>    
+                <a href="inventario.html" class="venta menu-item">
+                    <i class="fa-solid fa-cart-shopping" style="color: #0f1514;"></i>
+                    <img src="assent/inventario.png" alt="">
+                    <H4>Inventario</H4>
+                </a>    
             </div>
             <div>
-              <a href="ventas.html" class="venta menu-item">
-                <i class="fa-solid fa-cart-shopping" style="color: #0f1514;"></i>
-                <img src="assent/clientes.png" alt="">
-                <h4>Clientes</h4>
-              </a>    
+                <a href="ventas.html" class="venta menu-item">
+                    <i class="fa-solid fa-cart-shopping" style="color: #0f1514;"></i>
+                    <img src="assent/clientes.png" alt="">
+                    <h4>Clientes</h4>
+                </a>    
             </div>
             <div>
-              <a href="ventas.html" class="venta menu-item">
-                <i class="fa-solid fa-cart-shopping" style="color: #0f1514;"></i>
-                <img src="assent/proveedores.png" alt="">
-                <h4>Proveedores</h4>
-              </a>    
+                <a href="ventas.html" class="venta menu-item">
+                    <i class="fa-solid fa-cart-shopping" style="color: #0f1514;"></i>
+                    <img src="assent/proveedores.png" alt="">
+                    <h4>Proveedores</h4>
+                </a>    
             </div>
             <div>
-              <a href="ventas.html" class="venta menu-item">
-                <i class="fa-solid fa-cart-shopping" style="color: #0f1514;"></i>
-                <img src="assent/facturacion.png" alt="">
-                <h4>Facturación</h4>
-              </a>    
+                <a href="ventas.html" class="venta menu-item">
+                    <i class="fa-solid fa-cart-shopping" style="color: #0f1514;"></i>
+                    <img src="assent/facturacion.png" alt="">
+                    <h4>Facturación</h4>
+                </a>    
             </div>
             <div>
-              <a href="ventas.html" class="venta menu-item">
-                <i class="fa-solid fa-cart-shopping" style="color: #0f1514;"></i>
-                <img src="assent/reportes.png" alt="">
-                <h4>Reportes</h4>
-              </a>    
+                <a href="ventas.html" class="venta menu-item">
+                    <i class="fa-solid fa-cart-shopping" style="color: #0f1514;"></i>
+                    <img src="assent/reportes.png" alt="">
+                    <h4>Reportes</h4>
+                </a>    
             </div>
             <div>
-              <a href="ventas.html" class="venta menu-item">
-                <i class="fa-solid fa-cart-shopping" style="color: #0f1514;"></i>
-               <img src="assent/empleados.png" alt="">
-                <h4>Empleados</h4>
-              </a>    
+                <a href="ventas.html" class="venta menu-item">
+                    <i class="fa-solid fa-cart-shopping" style="color: #0f1514;"></i>
+                    <img src="assent/empleados.png" alt="">
+                    <h4>Empleados</h4>
+                </a>    
             </div>
             <div>
-              <a href="ventas.html" class="venta menu-item">
-                <i class="fa-solid fa-cart-shopping" style="color: #0f1514;"></i>
-                <img src="assent/administracion.png" alt="">
-                <h4>Administración</h4>
-        
-              </a>    
+                <a href="ventas.html" class="venta menu-item">
+                    <i class="fa-solid fa-cart-shopping" style="color: #0f1514;"></i>
+                    <img src="assent/administracion.png" alt="">
+                    <h4>Administración</h4>
+
+                </a>    
             </div>
-          </nav>
-        
+        </nav>
+
     </body>
 </html>
