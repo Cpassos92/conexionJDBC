@@ -1,0 +1,183 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #D3E4FE;
+  }
+  
+  h1, p {
+    text-align: center;
+    
+  }
+  
+  /* Botón del menú */
+  .menu-btn {
+    position: fixed;
+    top: 80px;
+    left: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 0px 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .menu-btn:hover {
+    background-color: #555;
+  }
+  
+  /* Menú lateral */
+  .side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 15rem;
+  }
+  
+  .side-menu a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .side-menu a:hover {
+    background-color: #575757;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    color: #ff6347;
+  }
+  
+  /* Contenido */
+  .content {
+    margin-left: 20px;
+  }
+  
+  header{
+    display:block;
+    justify-content: space-between;
+    background-color: #0070AF;
+    color: white;
+    text-align: center;
+    position: fixed; 
+    position: fixed; /* Hace que el header esté fijo en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%; /* Hace que el header abarque todo el ancho de la página */
+    
+  }
+  
+  .logo {
+    width: 60px; 
+    
+  }
+  
+  img{
+    
+      margin-right: 10px; /* Separación entre imagen y texto */
+      width: 60px; /* Ajusta el tamaño de la imagen */
+      
+  }
+  
+  
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem; /* Espacio entre columnas */
+    padding: 0;
+    margin-top: 90px; /* Ajusta según la altura de tu header */
+    max-height: 500px; /* Establece una altura máxima */
+    overflow-y: auto; /* Habilita la scrollbar vertical */
+    overflow-x: hidden; /* Evita la scrollbar horizontal */
+  }
+  
+  .menu-item {
+    text-align: center;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    padding: 0px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    height: 9rem;
+    width: 9rem;
+  }
+  .menu {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer y Edge */
+  }
+  
+  
+  
+  
+  
+  /* Add different background colors to each menu item */
+  .menu-item:nth-child(1) {
+    background-color: #F9AEAE;
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    .menu {
+      grid-template-columns: 1fr; /* Cambiar a una sola columna en pantallas pequeñas */
+    }
+  
+    .menu-item {
+      padding: 10px; /* Reducir el padding en pantallas más pequeñas */
+    }
+  
+    .menu-btn {
+      font-size: 18px; /* Ajustar el tamaño del botón del menú */
+    }
+    .menu-item {
+      margin: 5px; /* Menos margen en pantallas pequeñas */
+  }
+    .menu {
+      margin-top: 80px; /* Ajusta el margen para pantallas más pequeñas si es necesario */
+  }
+  }
+  
+  .venta {
+    display: inline-flex;
+    align-items: center;
+    padding: 40px 40px;
+    background-color: #f0f0f0; /* Cambia según tu diseño */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #0f1514;
+  }
+  
+  .venta:hover {
+    background-color: #e59393; /* Cambia el color al pasar el cursor */
+  }
+  
